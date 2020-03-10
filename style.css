@@ -25,6 +25,7 @@ p {
   border-style: solid palegreen;
   text-align: justify;
   width: 100vw;
+  margin: auto;
 }
 
 .content {
@@ -54,13 +55,12 @@ p {
 }
 
 img {
-  display: flex;
-  object-fit: contain;
-  width: 100vw;
-  border-radius: 4rem;
+  object-fit: cover;
+  border-radius: 4em;
 }
 
 /* mobile devices */
+
 @media screen and (max-width: 550px) {
   .body,
   .picture-container {
@@ -70,19 +70,19 @@ img {
     width: 100vw;
   }
 }
+
 /* tablet and larger screens */
+
 @media screen and (min-width: 800px) {
   .body,
   .picture-container,
   .column1,
   .column2 {
-    display: flex;
     justify-content: center;
   }
 }
 @media screen and (min-width: 800px) {
   img {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 25vw;
